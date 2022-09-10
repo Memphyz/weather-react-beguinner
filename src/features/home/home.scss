@@ -1,0 +1,34 @@
+.home-page {
+  height: 100%;
+  overflow: auto;
+  * {
+    position: relative;
+    z-index: 1;
+  }
+  .first-page {
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(./../../assets/backgrounds/home.jpg);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &::before {
+      content: "";
+      width: 100%;
+      z-index: 0;
+      height: 100%;
+      position: absolute;
+      top: 0%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .second-page {
+    height: 100vh;
+  }
+}
